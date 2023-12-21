@@ -1,8 +1,9 @@
 import React from "react";
 import { Text, StyleSheet, View, Image } from "react-native";
 
-const BarcodeScanner = params => {
-  return <View style={styles.container}>
+const BarcodeScanner = (params) => {
+  return (
+    <View style={styles.container}>
       <View style={styles.head}>
         <Text>Barcode scan</Text>
         <Image source={require("./assets/image.png")} />
@@ -30,7 +31,8 @@ const BarcodeScanner = params => {
           <Text style={styles.text}>+1554546546546</Text>
         </View>
       </View>
-    </View>;
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
@@ -86,4 +88,5 @@ const styles = StyleSheet.create({
     paddingVertical: 10
   }
 });
+
 export default BarcodeScanner;
